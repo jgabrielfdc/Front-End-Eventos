@@ -11,3 +11,13 @@
     color:#094A6A;
 }
 /*==============*/
+/* Ajuste Página */
+html,body{
+    height:100%;
+    width: 100%;
+}
+/*==============*/
+/* Login */
+#login,#login_interno,#login_externo{
+    transform:translate(0%,-35%);
+}
