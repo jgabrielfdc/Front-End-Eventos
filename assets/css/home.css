@@ -13,11 +13,21 @@
 /*==============*/
 /* Ajuste Página */
 html,body{
-    height:100%;
-    width: 100%;
+    height:100% !important;
+    margin:0px !important;
 }
 /*==============*/
 /* Login */
 #login,#login_interno,#login_externo{
     transform:translate(0%,-35%);
+}
+
+.btn-outline-ocean{
+    color:#014B6A;
+    border-color: #014B6A;
+}
+
+.btn-outline-ocean:hover{
+    background-color: #014B6A;
+    color:lightgray !important;
 }
