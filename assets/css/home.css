@@ -31,3 +31,13 @@ html,body{
     background-color: #014B6A;
     color:lightgray !important;
 }
+
+.btn-ocean{
+    color:#d3d3d3 !important;
+    background-color: #014B6A;
+}
+
+.btn-ocean:hover{
+    background-color: #016691;
+    color:lightgray !important;
+}

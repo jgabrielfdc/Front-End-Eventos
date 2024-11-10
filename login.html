@@ -17,10 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/home.css" />
-    <title>Login - FPM Eventos</title>
-    <script>
-      var linkAnterior;
-    </script>
+    <title>Cadastro - FPM Eventos</title>
   </head>
 
   <body class="bg-secondary-subtle">
@@ -66,7 +63,7 @@
                 <a
                   class="nav-link"
                   aria-current="page"
-                  href="#"
+                  href="home.html"
                   onclick="linkHightLight(this)"
                   >Home</a
                 >
@@ -93,16 +90,24 @@
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Todos os Eventos</a>
+                    <a class="dropdown-item" href="relatorio_eventos.html">Todos os Eventos</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a
-                  class="btn btn-secondary"
+                  class="btn btn-ocean"
                   aria-disabled="true"
                   href="login.html"
                   >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-danger"
+                  aria-disabled="true"
+                  href="cadastro_externo.html"
+                  >Cadastre-se</a
                 >
               </li>
             </ul>
@@ -113,39 +118,30 @@
     <!--*NavBar*-->
 
     <section class="container bg-light h-100">
-      <div class="row justify-content-center border border-dark w-auto h-100 bg-white">
-        <div class="col-sm-8 col-md-6 text-center h-100 d-flex flex-column my-3">
-          <h3 class="py-2 text-dark border">Cadastro</h3>
+      <div class="row justify-content-center border border-dark w-auto h-100 bg-white pb-3">
+        <div class="col-sm-8 col-md-6 text-center h-100 d-flex flex-column my-3 w-50">
+          <h3 class="py-2 text-dark border-bottom py-4  mb-auto mt-5">Login</h3>
 
-          <form class="gap-2 px-5 mb-3 d-flex flex-column justify-content-between h-50">
-            <input
-              type="text"
-              placeholder="Nome Completo:"
-              name="nome"
-              class="form-control w-100 rounded"
-            />
+          <form class="gap-4 px-5 mb-3 d-flex flex-column h-50 py-3">
             <input
               type="email"
-              placeholder="E-mail Institucional:"
-              name="email"
-              class="form-control w-100 rounded"
+              placeholder="E-mail:"
+              name="emailLogin"
+              class="form-control form-control-lg w-100 rounded"
             />
             <input
-              type="text"
-              placeholder="Matricula:"
-              name="matricula"
-              class="form-control w-100 rounded"
-            />
-            <input
-              type="text"
-              placeholder="Curso:"
-              name="curso"
-              class="form-control w-100 rounded"
+              type="password"
+              placeholder="Senha:"
+              name="senhaLogin"
+              class="form-control form-control-lg w-100 rounded mb-auto"
             />
           </form>
 
-          <a href="cadastro_externo.html"></a>
-          <button type="submit" class="btn btn-outline-ocean text-dark rounded mx-auto px-5 py-2 mt-5 w-75">Enviar</button>
+          
+          <div class="d-flex flex-wrap justify-content-center mt-auto mb-5 gap-4">
+            <button type="submit" class="btn btn-ocean btn-lg rounded mx-auto px-5 py-2 mt-5 w-75 ">Enviar</button>
+          <a href="cadastro_externo.html" class="my-2">Não Possuo Email Institucional</a>
+          </div>
         </div>
       </div>
     </section>
