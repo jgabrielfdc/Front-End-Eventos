@@ -1,0 +1,29 @@
+<div id="formularioAlterar">
+    <h2>Alterar Evento</h2>
+    <p>Selecione um evento para alterar.</p>
+    <form>
+      <div class="mb-3">
+        <label for="alterarTitulo" class="form-label">Título do Evento</label>
+        <input type="text" class="form-control" id="alterarTitulo" placeholder="Altere o título do evento">
+      </div>
+      <div class="mb-3">
+        <label for="alterarDescricao" class="form-label">Descrição</label>
+        <textarea class="form-control" id="alterarDescricao" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="descricaoEvento" class="form-label">Categoria</label>
+        <select class="form-control" id="categoria">
+              <option class="dropdown-item" href="#">Cursos</option>
+              <option class="dropdown-item" href="#">Palestras</option>
+              <option class="dropdown-item" href="#">Convenções</option>
+              <option class="dropdown-item" href="#">Festas</option>
+              <option class="dropdown-item" href="#">Formaturas</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="alterarData" class="form-label">Data do Evento</label>
+        <input type="date" class="form-control" id="alterarData">
+      </div>
+      <button type="submit" class="btn btn-success">Salvar Alterações</button>
+    </form>
+  </div>
