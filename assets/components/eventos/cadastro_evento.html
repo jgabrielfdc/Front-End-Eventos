@@ -1,28 +1,50 @@
 <div id="formularioCadastro">
-    <h2>Cadastrar Evento</h2>
-    <form class="w-75">
+  <h2>Cadastrar Evento</h2>
+  <form class="w-75">
       <div class="mb-3">
-        <label for="tituloEvento" class="form-label">Título do Evento</label>
-        <input type="text" class="form-control" id="tituloEvento" placeholder="Digite o título do evento">
+          <label for="tituloEvento" class="form-label">Título do Evento</label>
+          <input type="text" class="form-control" id="tituloEvento" placeholder="Digite o título do evento">
       </div>
       <div class="mb-3">
-        <label for="descricaoEvento" class="form-label">Descrição</label>
-        <textarea class="form-control" id="descricaoEvento" rows="3"></textarea>
+          <label for="descricaoEvento" class="form-label">Descrição</label>
+          <textarea class="form-control" id="descricaoEvento" rows="3"></textarea>
       </div>
       <div class="mb-3">
-        <label for="descricaoEvento" class="form-label">Categoria</label>
-        <select class="form-control" id="categoria">
+          <label for="categoria" class="form-label">Categoria</label>
+          <select class="form-control" id="categoria">
               <option class="dropdown-item" href="#">Cursos</option>
               <option class="dropdown-item" href="#">Palestras</option>
               <option class="dropdown-item" href="#">Convenções</option>
               <option class="dropdown-item" href="#">Festas</option>
               <option class="dropdown-item" href="#">Formaturas</option>
-        </select>
+          </select>
       </div>
       <div class="mb-3">
-        <label for="dataEvento" class="form-label">Data do Evento</label>
-        <input type="date" class="form-control" id="dataEvento">
+          <label for="dataEvento" class="form-label">Data do Evento</label>
+          <input type="date" class="form-control" id="dataEvento">
       </div>
+
+      <div class="mb-3">
+          <label for="palestranteEvento" class="form-label">Palestrante</label>
+          <input type="text" class="form-control" id="palestranteEvento" placeholder="Nome do palestrante">
+      </div>
+      <div class="mb-3">
+          <label for="cargaHorariaEvento" class="form-label">Carga Horária (em horas)</label>
+          <input type="number" class="form-control" id="cargaHorariaEvento" placeholder="Ex.: 8">
+      </div>
+      <div class="mb-3">
+          <label for="horaInicioEvento" class="form-label">Hora de Início</label>
+          <input type="time" class="form-control" id="horaInicioEvento">
+      </div>
+      <div class="mb-3">
+          <label for="horaTerminoEvento" class="form-label">Hora de Término</label>
+          <input type="time" class="form-control" id="horaTerminoEvento">
+      </div>
+      <div class="mb-3">
+          <label for="localEvento" class="form-label">Local do Evento</label>
+          <input type="text" class="form-control" id="localEvento" placeholder="Endereço ou local do evento">
+      </div>
+
       <button type="submit" class="btn btn-primary">Salvar Evento</button>
-    </form>
-  </div>
+  </form>
+</div>
